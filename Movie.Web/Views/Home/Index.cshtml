@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MovieDto>
+
+<form>
+    <div class="container row">
+        @foreach (var movie in Model)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-0 my-3 border rounded">
+                    <div class="card">
+                        <h3 class="card-title text-white-50 text-center py-2">@movie.Name</h3>
+                        <img src="@movie.ImageUrl" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between py-2">
+                                <span class="text-danger" style="font-size:20px;">@string.Format("{0:c}", movie.Price)</span>
+                                <span class="badge bg-warning text-white p-2">@movie.category</span>
+                            </div>
+                            <p class="card-text">@Html.Raw(movie.Description)</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a asp-action="MovieDetails" asp-route-movieId="@movie.MovieId"
+                                       class="btn btn-success form-control">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</form>

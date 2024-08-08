@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{2903FCDE-1FE3-4A83-8524-B8EC0FBFD913}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{95ADADF6-6408-41B3-A069-356F3249A589}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{FB9E60EF-3229-4E96-AF47-9701CE8C2ED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B231DE7A-7A54-4A24-8F7A-D2EEF2394C85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Services.TicketAPI", "Movies.Services.TicketAPI\Movies.Services.TicketAPI.csproj", "{399D9A37-2186-4FCB-96FE-170F86F5E72D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movie.Web", "Movie.Web\Movie.Web.csproj", "{1792D456-DA70-4DB6-AA53-F1ED5C85D63F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Services.AuthAPI", "Movies.Services.AuthAPI\Movies.Services.AuthAPI.csproj", "{ADC67941-7B14-41C0-B35F-D655A4159E22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Services.MovieAPI", "Movies.Services.MoviesAPI\Movies.Services.MovieAPI.csproj", "{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399D9A37-2186-4FCB-96FE-170F86F5E72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399D9A37-2186-4FCB-96FE-170F86F5E72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399D9A37-2186-4FCB-96FE-170F86F5E72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399D9A37-2186-4FCB-96FE-170F86F5E72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1792D456-DA70-4DB6-AA53-F1ED5C85D63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1792D456-DA70-4DB6-AA53-F1ED5C85D63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1792D456-DA70-4DB6-AA53-F1ED5C85D63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1792D456-DA70-4DB6-AA53-F1ED5C85D63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC67941-7B14-41C0-B35F-D655A4159E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC67941-7B14-41C0-B35F-D655A4159E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC67941-7B14-41C0-B35F-D655A4159E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC67941-7B14-41C0-B35F-D655A4159E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{399D9A37-2186-4FCB-96FE-170F86F5E72D} = {B231DE7A-7A54-4A24-8F7A-D2EEF2394C85}
+		{1792D456-DA70-4DB6-AA53-F1ED5C85D63F} = {2903FCDE-1FE3-4A83-8524-B8EC0FBFD913}
+		{ADC67941-7B14-41C0-B35F-D655A4159E22} = {B231DE7A-7A54-4A24-8F7A-D2EEF2394C85}
+		{AA3892FA-3B66-4B04-ACA0-DF964F5B67EC} = {B231DE7A-7A54-4A24-8F7A-D2EEF2394C85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2653074-CAFA-44BD-96FE-71875995C851}
+	EndGlobalSection
+EndGlobal
