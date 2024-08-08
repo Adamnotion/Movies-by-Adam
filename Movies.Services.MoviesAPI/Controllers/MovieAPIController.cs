@@ -11,7 +11,7 @@ namespace Movies.Services.MovieAPI.Controllers
 {
     [Route("api/movie")]
     [ApiController]
-  
+    [Authorize]
     public class TicketAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
@@ -61,6 +61,7 @@ namespace Movies.Services.MovieAPI.Controllers
        
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
 
         public ResponseDto Post([FromBody] MovieDto ticketDto)
         {
@@ -82,6 +83,7 @@ namespace Movies.Services.MovieAPI.Controllers
 
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
 
         public ResponseDto Put([FromBody] MovieDto ticketDto)
         {
@@ -103,6 +105,7 @@ namespace Movies.Services.MovieAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
 
         public ResponseDto Delete(int id)
         {
